@@ -22,9 +22,14 @@ There are four migrations. First three create tables (products, comments and pat
  --- | --- 
  GET | /api/products 
  GET | /api/products/{id} 
+ GET | /api/products/{id}/pattern
+ GET | /api/products/{products_id}/comments 
  POST | /api/products
  PUT | /api/products/{id}
- DELETE | /api/products/{id}
+ DELETE | /api/products/{id} 
+ GET | /api/comments
+ POST | /api/comments
+ GET | /api/patterns 
  
 ## About Laravel
 
