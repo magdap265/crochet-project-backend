@@ -11,6 +11,7 @@
 [Frontend](http://magdap.ct8.pl/)
 
 [Backend](https://sleepy-oasis-15035.herokuapp.com/api/products)
+Backend is running on free plan on heroku. If data is not available wait a few seconds,  please.
 ## Documentation
 This project contain 3 tables: products, comments and patterns. First of them contain informations of products such as name, product type, color, rope size, description of product and path to image of product. Next one contains details of products comments like:  username, rating, opinion and id of product. Additional this table is connect by one to many relationship (one product can have many comments). Last of the tables contain patterns to products and there is only  path to video of product pattern and id of product. This table is connected with products table too but by one to one relationship (one product has one pattern). 
 In this project are three providers: Products.php, Comments.php and Patterns.php. In products provider are declared two functions responsible for relationship between products and another two tables. First of them is relationship one to one and join one product with one pattern. Second relationship is between products and comments. It is one to many relationship because one of products can have many comments. In comments and patterns providers are inverse of that relationships. Of course in every three providers are declared  (protected $filable) which required to...
